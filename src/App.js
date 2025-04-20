@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState} from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [like, setLike] = useState(0); /*function trả về array có hai phần tử, giá trị khởi tạo của function useState là initialState cho là số 0*/
+  const handleClick = () => {
+    setLike(1 - like)
+  }
+  return <h1 onClick={handleClick}>{like === 1 ? "👍" : "👎"}</h1>;
 }
 
 export default App;

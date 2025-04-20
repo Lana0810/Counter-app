@@ -1,3 +1,19 @@
+Terminal:
+- `npx create-react-app intro-react`
+-`cd intro-react`
+- `code .`
+
+VS code:
+- `npm start`
+- delete `src/`
+- `index.js` `App.js`
+
+npm:
+- install `ipm i name`
+- uninstall `npm uninstall name`
+- `npm start`
+- `npm build`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
